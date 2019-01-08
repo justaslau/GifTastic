@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+	background: #E44D26;
+	background: -webkit-linear-gradient(to right, #F16529, #E44D26);
+	background: linear-gradient(to right, #F16529, #E44D26);
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+button {
+	outline: none;
+	cursor: pointer;
+}
+h3 {
+	margin: 10px auto;
+	margin-bottom: 25px;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.inner {
+	width: 100%;
+}
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.choices {
+	flex-basis: 100%;
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, 0.35);
+	border-radius: 5px;
+	padding: 10px;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+}
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.adder input[type=button], .show-more {
+	margin: 0 auto;
+	display: block;
+	font-size: 16px;
+	background: rgba(0, 0, 0, 0.35);
+	border: 0;
+	color: #fff;
+	padding: 10px;
+	outline: none;
+	border-radius: 5px;
+}
+.show-more {
+	width: 100%;
+}
+.favorites h3, .adder h3 {
+	margin-top: 25px;
+}
+.category-gif {
+	text-align: center;
+}
+.category-gif h4 {
+	margin: 5px;
+}
+.add-fav {
+	margin-bottom: 10px;
+	margin: 0 auto;
+	display: block;
+	font-size: 12px;
+	background: rgba(0, 0, 0, 0.35);
+	border: 0;
+	color: #fff;
+	padding: 2px 10px;
+	outline: none;
+	margin-bottom: 10px;
+}
+.category-gif img {
+	display: block;
+	margin: 0 auto;
+}
+.favorites {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.favorites h3 {
+	flex-basis: 100%;
+}
+.favorites .category-gif {
+	display: block;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 641px) {
+	.inner, .favorites {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.buttons h3 {
+		flex-basis: 100%;
+	}
+	.adder {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.adder h3 {
+		flex-basis: 100%;
+	}
+	input[type=text] {
+		width: 35%;
+		margin: 0 auto;
+		margin-right: 10px;
+	}
+	.adder input[type=button] {
+		padding: 10px;
+		height: 35px;
+		width: 35%;
+		margin-left: 10px;
+	}
+	.buttons button {
+		flex-basis: 32.3%;
+	}
+	.results {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.results h3 {
+		flex-basis: 100%;
+	}
+	.category-gif {
+		flex-basis: 33.3%;
+	}
+}
+@media only screen and (min-width: 980px) {
+	.inner, .favorites {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.buttons button {
+		flex-basis: 24%;
+	}
+	.category-gif {
+		flex-basis: 20%;
+	}
+	.results {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+}
